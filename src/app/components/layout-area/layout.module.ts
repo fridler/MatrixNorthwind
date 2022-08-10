@@ -5,6 +5,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
+import { HomeModule } from '../home-area/home.module';
+import { ProductsModule } from '../products-area/products.module';
+import { AboutModule } from '../about-area/about.module';
 
 // ng g m components/layout-area/layout --flat
 
@@ -17,7 +20,10 @@ import { RouterModule } from '@angular/router';
     ],
     imports: [
         CommonModule,
-        RouterModule // Angular Module containing routing commands
+        RouterModule, // Angular Module containing routing commands
+        HomeModule,
+        ProductsModule,
+        AboutModule
     ]
 })
 export class LayoutModule { }
